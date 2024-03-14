@@ -1,0 +1,47 @@
+Create Event of the Pause Object
+	This event initializes variables and settings necessary for the game's pause menu.
+
+Initialized Variables:
+	pauseSurfice: Stores the pause surface.
+	pause: Indicates whether the game is paused.
+	width and height: Width and height of the game window.
+	font_size: Current font size.
+	pauseOption_Select: Controls the selected option in the pause menu.
+	Move_pressed: Checks if the movement key has been pressed.
+	Min_move and Max_move: Minimum and maximum limits for movement.
+	option_pressed: Checks if any option has been pressed.
+	lang: Stores the currently selected language.
+	pauseOptions: Array containing the pause menu options.
+	setingsOptions: Array containing the configuration options.
+	interface: String that stores the current interface.
+	lenguages: Array of objects containing different languages and their respective translations.
+Step Event of the Pause Object
+	This event controls the interaction of the pause menu in the game and executes actions related to the selected options.
+
+Key Functionalities:
+	Control of option selection and movement limits.
+	Execution of selected options according to the current interface.
+	Verification of pressed keys and their corresponding responses.
+Draw GUI Event of the Pause Object
+	This event is responsible for drawing the graphical user interface of the pause menu and game options.
+
+Key Functionalities:
+	Draws the pause menu interface, including backgrounds, borders, and menu options.
+	Controls the visibility of options according to user selection.
+	Manages transparency and colors for a clear representation of the interface.
+Key Pressed Event: Escape
+	This event controls the actions taken when the escape key is pressed during the game.
+
+Actions Taken:
+	If the interface is empty, it toggles the pause state of the game.
+	If the game is paused and the interface is empty, it stops the audio playback, hides the cursor, and prints a pause message in the console.
+	If the game is not paused and the interface is empty, it frees the pause surface resources, activates all instances, resumes audio playback, resets the cursor, and resets the pause option selection.
+	If the interface is not empty, it resets the interface, prints a menu exit message in the console, and sets option_pressed to true.
+pauseController Script
+	This script contains functions related to controlling the pause menu and the actions corresponding to the selected options.
+
+Functions:
+	resumeGame: This function resumes the game from the paused state.
+	executePause: This function executes different actions based on the provided action parameter.
+	
+"Important: Place the pause object in your room for this to work."

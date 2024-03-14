@@ -1,0 +1,47 @@
+Evento Create del Objeto Pause
+	Este evento inicializa variables y configuraciones necesarias para el menú de pausa del juego.
+
+Variables Inicializadas:
+	pauseSurfice: Almacena la superficie de pausa.
+	pause: Indica si el juego está en pausa.
+	width y height: Ancho y alto de la ventana del juego.
+	font_size: Tamaño de la fuente actual.
+	pauseOption_Select: Controla la opción seleccionada en el menú de pausa.
+	Move_pressed: Verifica si se ha presionado la tecla de movimiento.
+	Min_move y Max_move: Límites mínimo y máximo para el movimiento.
+	option_pressed: Verifica si se ha presionado alguna opción.
+	lang: Almacena el idioma actual seleccionado.
+	pauseOptions: Arreglo que contiene las opciones del menú de pausa.
+	setingsOptions: Arreglo que contiene las opciones de configuración.
+	interface: Cadena de caracteres que almacena la interfaz actual.
+	lenguages: Arreglo de objetos que contiene diferentes idiomas y sus respectivas traducciones.
+Evento Step del Objeto Pause
+	Este evento controla la interacción del menú de pausa en el juego y ejecuta acciones correspondientes a las opciones seleccionadas.
+
+Funcionalidades Clave:
+	Control de selección de opciones y límites de movimiento.
+	Ejecución de las opciones seleccionadas según la interfaz actual.
+	Verificación de las teclas presionadas y su correspondiente respuesta.
+Evento Draw GUI del Objeto Pause
+	Este evento se encarga de dibujar la interfaz gráfica del menú de pausa y las opciones del juego.
+
+Funcionalidades Clave:
+	Dibuja la interfaz del menú de pausa, incluyendo fondos, bordes y opciones de menú.
+	Controla la visibilidad de las opciones según la selección del usuario.
+	Maneja la transparencia y los colores para una representación clara de la interfaz.
+Evento Key Pressed: Escape
+	Este evento controla las acciones realizadas al presionar la tecla de escape durante el juego.
+
+Acciones Realizadas:
+	Si la interfaz está vacía, se alterna el estado de pausa del juego.
+	Si el juego está en pausa y la interfaz está vacía, se detiene la reproducción de audio, se oculta el cursor y se imprime un mensaje de pausa en la consola.
+	Si el juego no está en pausa y la interfaz está vacía, se liberan los recursos de la superficie de pausa, se activan todas las instancias, se reanuda la reproducción de audio, se restablece el cursor y se reinicia la selección de la opción de pausa.
+	Si la interfaz no está vacía, se reinicia la interfaz, se imprime un mensaje de salida de menú en la consola y se establece option_pressed en verdadero.
+Script pauseController
+	Este script contiene funciones relacionadas con el control del menú de pausa y las acciones correspondientes a las opciones seleccionadas.
+
+Funciones:
+	resumeGame: Esta función reanuda el juego desde el estado de pausa.
+	executePause: Esta función ejecuta diferentes acciones según el parámetro action proporcionado.
+	
+"Importante: Coloque el objeto pause en su room para que esto funcione."
