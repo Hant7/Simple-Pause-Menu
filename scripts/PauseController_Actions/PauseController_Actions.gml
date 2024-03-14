@@ -19,7 +19,8 @@ function executePause(action) {
 			interface = "options";
 		break
 		case "ChangeLang":
-			if (lang >= array_length(lenguages) - 1) {lang = 0} else { lang++ }
+		interfaceList = "lengs"
+			//if (selectLeng >= array_length(getLengs()) - 1) {selectLeng = 0} else { selectLeng++ }
 		break
 		case "ChangeScreemMode":
 			window_set_fullscreen(!window_get_fullscreen())
@@ -35,6 +36,9 @@ function executePause(action) {
 		break
 		case "AplyTheme":
 			theme = pauseOptionList_Select+1;
+		break
+		case "Aplyleng":
+			selectLeng = pauseOptionList_Select;
 		break
 		default:
 			show_debug_message(string(action)+" is out of range");

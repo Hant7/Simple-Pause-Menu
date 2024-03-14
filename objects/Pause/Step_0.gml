@@ -36,6 +36,9 @@ if (pause) {
 	if (interfaceList = "themes" && !option_pressed) {
 		executePause("AplyTheme");
         option_pressed = true;
+    } else if (interfaceList = "lengs" && !option_pressed) {
+		executePause("Aplyleng");
+        option_pressed = true;
     } else if (interfaceList == "" && interface == "" && Key_enter && !option_pressed) {
         executePause(pauseOptions[pauseOption_Select].execute);
         option_pressed = true;
@@ -75,19 +78,19 @@ if (Key_return && !return_pressed) {
 // Pause Options
 pauseOptions = [
     {
-        text: lenguages[lang].resumne,
+        text: leng.resumne,
         execute: "resumeGame",
     },
     {
-        text: lenguages[lang].setings,
+        text: leng.setings,
         execute: "openSetings",
     },
 	 {
-        text: lenguages[lang].Example,
+        text: leng.Example,
         execute: "Example",
     },
     {
-        text: lenguages[lang].quit,
+        text: leng.quit,
         execute: "quit",
     },
 ];
@@ -95,17 +98,17 @@ pauseOptions = [
 // Settings Options
 setingsOptions = [
     {
-        text: lenguages[lang].lang,
+        text: leng.lang,
         execute: "ChangeLang",
-        variable: lenguages[lang].lang_name,
+        variable: leng.lang_name,
     },
     {
-        text: lenguages[lang].winMode,
+        text: leng.winMode,
         execute: "ChangeScreemMode",
-        variable: ((window_get_fullscreen()) ? lenguages[lang].FullscreemOn : lenguages[lang].FullscreemOff),
+        variable: ((window_get_fullscreen()) ? leng.FullscreemOn : leng.FullscreemOff),
     },
 	{
-        text: lenguages[lang].Theme,
+        text: leng.Theme,
         execute: "ChangeTheme",
         variable: themeName,
     },

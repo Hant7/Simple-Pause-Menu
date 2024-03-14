@@ -42,7 +42,8 @@ if (pause) {
 
 	// Menus
 	ExecuteOptions(setingsOptions,"options")
-	ExecuteText(lenguages[lang].Example_Text,"Example")
+	ExecuteText(leng.Example_Text,"Example")
 	ExecuteList(themeList,"themes",180);
+	ExecuteList(getLengs(),"lengs",100);
 } 
 if (Show_Window_Debug_Border) { draw_rectangle_color(Border_Space/2,Border_Space/2,width-(Border_Space/2),height-(Border_Space/2),Borders_Color,Background_color,Borders_Color,Background_color,true) }

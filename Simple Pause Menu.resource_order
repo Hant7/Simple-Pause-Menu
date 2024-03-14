@@ -3,13 +3,14 @@
     {"name":"Simple Pause Menu","order":5,"path":"folders/Simple Pause Menu.yy",},
     {"name":"Documentation","order":3,"path":"folders/Simple Pause Menu/Documentation.yy",},
     {"name":"Fonts","order":2,"path":"folders/Simple Pause Menu/Fonts.yy",},
+    {"name":"Lengs","order":4,"path":"folders/Simple Pause Menu/Lengs.yy",},
     {"name":"Objects","order":1,"path":"folders/Simple Pause Menu/Objects.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"Background_test","order":7,"path":"sprites/Background_test/Background_test.yy",},
     {"name":"English","order":1,"path":"notes/English/English.yy",},
-    {"name":"PauseController_GUI","order":2,"path":"scripts/PauseController_GUI/PauseController_GUI.yy",},
     {"name":"Room1","order":6,"path":"rooms/Room1/Room1.yy",},
     {"name":"PauseController_Actions","order":1,"path":"scripts/PauseController_Actions/PauseController_Actions.yy",},
+    {"name":"PauseController_GUI","order":2,"path":"scripts/PauseController_GUI/PauseController_GUI.yy",},
+    {"name":"Background_test","order":7,"path":"sprites/Background_test/Background_test.yy",},
   ],
 }
