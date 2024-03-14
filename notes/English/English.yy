@@ -1,9 +1,11 @@
 {
-  "resourceType": "GMNotes",
-  "resourceVersion": "1.1",
-  "name": "English",
-  "parent": {
-    "name": "Documentation",
-    "path": "folders/Simple Pause Menu/Documentation.yy",
+  "$GMNotes":"",
+  "%Name":"English",
+  "name":"English",
+  "parent":{
+    "name":"Documentation",
+    "path":"folders/Simple Pause Menu/Documentation.yy",
   },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
 }
