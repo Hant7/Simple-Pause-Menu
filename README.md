@@ -1,11 +1,11 @@
-# Simple menú de pausa
+# Simple Pause Menu
 
-Este plugin de Game Maker Studio tiene como propósito permitirle a las personas implementar de forma sencilla un menú de pausa en sus proyectos que pueden modificar a su gusto para adaptarlo a lo que deseen de forma sencilla y rápida.
+This Game Maker Studio plugin is designed to allow people to easily implement a pause menu in their projects, which they can modify to their liking to adapt it to their needs quickly and easily.
 
-## Instalación
+## Installation
 
-Como su nombre lo dice, la instalación no habría podido ser más simple. En la carpeta del proyecto se encuentra un archivo llamado ```SimplePauseMenu_local_package-2.0.2.yymps```, el cual debes importar a tu proyecto desde el menú de herramientas. Luego, selecciona todos los archivos y coloca el objeto "pause" en las salas donde quieras que el juego se pueda pausar y listo. (Esta no es la última versión disponible, para tener acceso a esta debes abrir el proyecto y crear tu propio paquete local).
+As the name suggests, installation couldn't be simpler. In the project folder, you'll find a file called ```SimplePauseMenu_local_package-2.0.2.yymps```, which you should import into your project from the tools menu. Then, select all the files and place the "pause" object in the rooms where you want the game to be able to pause, and you're all set. (This isn't the latest version available; to access the latest version, you must open the project and create your own local package).
 
-## Cómo usar
+## How to use
 
-Para acceder a este menú dentro del juego es tan simple como presionar ESC en tu teclado (esta tecla se puede cambiar en las primeras variables del evento step).
+To access this menu within the game, it's as simple as pressing ESC on your keyboard (this key can be changed in the first variables of the step event).
