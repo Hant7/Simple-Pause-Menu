@@ -1,4 +1,3 @@
-markdown
 # Simple menú de pausa
 
 Este plugin de Game Maker Studio tiene como propósito permitirle a las personas implementar de forma sencilla un menú de pausa en sus proyectos que pueden modificar a su gusto para adaptarlo a lo que deseen de forma sencilla y rápida.
