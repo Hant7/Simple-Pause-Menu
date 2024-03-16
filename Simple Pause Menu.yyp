@@ -25,17 +25,13 @@
   "resources":[
     {"id":{"name":"pauseFont","path":"fonts/pauseFont/pauseFont.yy",},},
     {"id":{"name":"Pause","path":"objects/Pause/Pause.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"PauseController_Actions","path":"scripts/PauseController_Actions/PauseController_Actions.yy",},},
     {"id":{"name":"PauseController_GUI","path":"scripts/PauseController_GUI/PauseController_GUI.yy",},},
     {"id":{"name":"lengs_manager","path":"scripts/lengs_manager/lengs_manager.yy",},},
-    {"id":{"name":"Background_test","path":"sprites/Background_test/Background_test.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
-  "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-  ],
+  "RoomOrderNodes":[],
   "templateType":"game",
   "TextureGroups":[
     {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
