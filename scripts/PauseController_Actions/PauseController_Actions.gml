@@ -39,6 +39,7 @@ function executePause(action) {
 		break
 		case "Aplyleng":
 			selectLeng = pauseOptionList_Select;
+			leng=getLeng(lenguages[selectLeng])
 		break
 		default:
 			show_debug_message(string(action)+" is out of range");

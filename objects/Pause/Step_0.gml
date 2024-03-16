@@ -3,6 +3,8 @@ Key_down = keyboard_check(vk_down);
 Key_enter = keyboard_check(vk_enter);
 Key_return = keyboard_check(vk_escape);
 
+
+
 if (pause) {
     // Control for option selection
 	if (interfaceList == "") {
@@ -30,13 +32,13 @@ if (pause) {
 	        Move_pressed = false;
 	    }
 	}
-
+	
     // Control for executing options
 	// add a && Key_enter to end in a firsh if with dom't auto aplicate changes.
 	if (interfaceList = "themes" && !option_pressed) {
 		executePause("AplyTheme");
         option_pressed = true;
-    } else if (interfaceList = "lengs" && !option_pressed) {
+    } else if (interfaceList = "lengs" && !option_pressed && Key_enter) {
 		executePause("Aplyleng");
         option_pressed = true;
     } else if (interfaceList == "" && interface == "" && Key_enter && !option_pressed) {

@@ -19,7 +19,7 @@ version="Alpha v1.2.5";
 Scroll=0;
 pauseOptions=[];
 setingsOptions=[];
-selectLeng=0
+selectLeng=0 // English
 lenguages=getLengs()
 leng=getLeng(lenguages[selectLeng])
 

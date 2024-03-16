@@ -21,16 +21,16 @@ function allLengs() {
 			],
 	    },
 		{
-	        lang_name: "English 2",
-	        resumne: "Resume",
-	        setings: "Settings",
-	        quit: "Quit",
-	        winMode: "Window Mode",
-	        lang: "Languagessss",
-	        FullscreemOff: "Window",
-	        FullscreemOn: "Fullscreen",
-			Theme: "Theme",
-			Example: "Example",
+	        lang_name: "Spanish",
+	        resumne: "Volver",
+	        setings: "Ajustes",
+	        quit: "Salir",
+	        winMode: "Modo de ventana",
+	        lang: "Lenguage",
+	        FullscreemOff: "Ventana",
+	        FullscreemOn: "Pantalla completa",
+			Theme: "Tema",
+			Example: "Ejemplo",
 			Example_Text : [
 				"",
 				"Hello, this is a sample text. I will take this opportunity to introduce myself as a",
@@ -44,7 +44,7 @@ function allLengs() {
 }
 
 function getLengs(){
-	lenguages = allLengs()
+	var lenguages = allLengs()
 	var lengs = [];
 	for (var i = 0; i < array_length(lenguages); i++) {
 		lengs[i] = lenguages[i].lang_name;
@@ -53,7 +53,7 @@ function getLengs(){
 }
 
 function getLeng(lang) {
-	lenguages = allLengs()
+	var lenguages = allLengs()
 	for (var i = 0; i < array_length(lenguages); i++) {
 		if (lenguages[i].lang_name == lang) {
 			return lenguages[i]
