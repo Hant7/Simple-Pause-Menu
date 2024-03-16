@@ -42,7 +42,7 @@ if (pause) {
 
 	// Menus
 	ExecuteOptions(setingsOptions,"options")
-	ExecuteText(leng.Example_Text,"Example")
+	ExecuteText(leng.example_menu.Example_Text,"Example")
 	ExecuteList(themeList,"themes",180);
 	ExecuteList(getLengs(),"lengs",100);
 } 

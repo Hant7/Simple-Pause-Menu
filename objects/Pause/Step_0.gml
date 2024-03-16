@@ -2,9 +2,6 @@ Key_up = keyboard_check(vk_up);
 Key_down = keyboard_check(vk_down);
 Key_enter = keyboard_check(vk_enter);
 Key_return = keyboard_check(vk_escape);
-
-
-
 if (pause) {
     // Control for option selection
 	if (interfaceList == "") {
@@ -80,19 +77,19 @@ if (Key_return && !return_pressed) {
 // Pause Options
 pauseOptions = [
     {
-        text: leng.resumne,
+        text: leng.menu.resumne,
         execute: "resumeGame",
     },
     {
-        text: leng.setings,
+        text: leng.menu.setings,
         execute: "openSetings",
     },
 	 {
-        text: leng.Example,
+        text: leng.menu.Example,
         execute: "Example",
     },
     {
-        text: leng.quit,
+        text: leng.menu.quit,
         execute: "quit",
     },
 ];
@@ -100,17 +97,17 @@ pauseOptions = [
 // Settings Options
 setingsOptions = [
     {
-        text: leng.lang,
+        text: leng.setings_menu.lang,
         execute: "ChangeLang",
         variable: leng.lang_name,
     },
     {
-        text: leng.winMode,
+        text: leng.setings_menu.winMode,
         execute: "ChangeScreemMode",
-        variable: ((window_get_fullscreen()) ? leng.FullscreemOn : leng.FullscreemOff),
+        variable: ((window_get_fullscreen()) ? leng.setings_menu.FullscreemOn : leng.setings_menu.FullscreemOff),
     },
 	{
-        text: leng.Theme,
+        text: leng.setings_menu.Theme,
         execute: "ChangeTheme",
         variable: themeName,
     },

@@ -11,9 +11,7 @@
   "defaultScriptType":0,
   "Folders":[
     {"$GMFolder":"","%Name":"Simple Pause Menu","folderPath":"folders/Simple Pause Menu.yy","name":"Simple Pause Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Documentation","folderPath":"folders/Simple Pause Menu/Documentation.yy","name":"Documentation","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Simple Pause Menu/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Lengs","folderPath":"folders/Simple Pause Menu/Lengs.yy","name":"Lengs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Simple Pause Menu/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Simple Pause Menu/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
@@ -26,8 +24,6 @@
   "name":"Simple Pause Menu",
   "resources":[
     {"id":{"name":"pauseFont","path":"fonts/pauseFont/pauseFont.yy",},},
-    {"id":{"name":"English","path":"notes/English/English.yy",},},
-    {"id":{"name":"Spanish","path":"notes/Spanish/Spanish.yy",},},
     {"id":{"name":"Pause","path":"objects/Pause/Pause.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"PauseController_Actions","path":"scripts/PauseController_Actions/PauseController_Actions.yy",},},

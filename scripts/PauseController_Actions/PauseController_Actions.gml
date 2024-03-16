@@ -5,7 +5,6 @@ function resumeGame() {
 	instance_activate_all()
 	audio_resume_all()
 	window_set_cursor(cr_none)
-	show_debug_message("unpaused")
 }
 
 /// execute escripts to pause
@@ -19,8 +18,7 @@ function executePause(action) {
 			interface = "options";
 		break
 		case "ChangeLang":
-		interfaceList = "lengs"
-			//if (selectLeng >= array_length(getLengs()) - 1) {selectLeng = 0} else { selectLeng++ }
+			interfaceList = "lengs"
 		break
 		case "ChangeScreemMode":
 			window_set_fullscreen(!window_get_fullscreen())
