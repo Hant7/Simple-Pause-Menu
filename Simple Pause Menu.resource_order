@@ -5,7 +5,8 @@
     {"name":"Objects","order":1,"path":"folders/Simple Pause Menu/Objects.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"PauseController_GUI","order":1,"path":"scripts/PauseController_GUI/PauseController_GUI.yy",},
+    {"name":"Room1","order":6,"path":"rooms/Room1/Room1.yy",},
     {"name":"lengs_manager","order":2,"path":"scripts/lengs_manager/lengs_manager.yy",},
+    {"name":"PauseController_GUI","order":1,"path":"scripts/PauseController_GUI/PauseController_GUI.yy",},
   ],
 }
