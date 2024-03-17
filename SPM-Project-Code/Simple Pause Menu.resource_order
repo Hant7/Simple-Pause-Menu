@@ -1,6 +1,8 @@
 {
   "FolderOrderSettings":[
     {"name":"Simple Pause Menu","order":5,"path":"folders/Simple Pause Menu.yy",},
+    {"name":"Example","order":3,"path":"folders/Simple Pause Menu/Example.yy",},
+    {"name":"Backgrounds","order":1,"path":"folders/Simple Pause Menu/Example/Backgrounds.yy",},
     {"name":"Fonts","order":2,"path":"folders/Simple Pause Menu/Fonts.yy",},
     {"name":"Objects","order":1,"path":"folders/Simple Pause Menu/Objects.yy",},
   ],

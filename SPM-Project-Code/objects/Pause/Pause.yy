@@ -48,6 +48,8 @@
     {"$GMObjectProperty":"","%Name":"List_Border","filters":[],"listItems":[],"multiselect":false,"name":"List_Border","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
     {"$GMObjectProperty":"","%Name":"Pause_On_Unfocus","filters":[],"listItems":[],"multiselect":false,"name":"Pause_On_Unfocus","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"","%Name":"Show_Window_Debug_Border","filters":[],"listItems":[],"multiselect":false,"name":"Show_Window_Debug_Border","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"","%Name":"Image_Background_Use","filters":[],"listItems":[],"multiselect":false,"name":"Image_Background_Use","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
+    {"$GMObjectProperty":"","%Name":"Image_Background","filters":[],"listItems":[],"multiselect":false,"name":"Image_Background","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Background_1","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

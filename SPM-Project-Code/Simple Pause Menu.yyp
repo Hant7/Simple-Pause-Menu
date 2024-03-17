@@ -11,6 +11,8 @@
   "defaultScriptType":0,
   "Folders":[
     {"$GMFolder":"","%Name":"Simple Pause Menu","folderPath":"folders/Simple Pause Menu.yy","name":"Simple Pause Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Example","folderPath":"folders/Simple Pause Menu/Example.yy","name":"Example","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Backgrounds","folderPath":"folders/Simple Pause Menu/Example/Backgrounds.yy","name":"Backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Simple Pause Menu/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Simple Pause Menu/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Simple Pause Menu/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -29,6 +31,7 @@
     {"id":{"name":"lengs_manager","path":"scripts/lengs_manager/lengs_manager.yy",},},
     {"id":{"name":"PauseController_Actions","path":"scripts/PauseController_Actions/PauseController_Actions.yy",},},
     {"id":{"name":"PauseController_GUI","path":"scripts/PauseController_GUI/PauseController_GUI.yy",},},
+    {"id":{"name":"Background_1","path":"sprites/Background_1/Background_1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

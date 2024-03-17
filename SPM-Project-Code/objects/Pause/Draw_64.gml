@@ -13,9 +13,14 @@ if (pause) {
 	draw_set_alpha(Background_Alpha)
 	draw_rectangle(0,0,width,height, false)
 	draw_set_color(Font_color)
-	draw_set_alpha(pauseMenu_Alpha)
-	draw_set_color(Background_color)
-	draw_rectangle(Border_Space,Border_Space,PauseMenu_sise,height-Border_Space,false)
+	if (Image_Background_Use) {
+		draw_set_color(c_white)
+		draw_sprite_ext(Image_Background,-1,Border_Space,Border_Space,(PauseMenu_sise-Border_Space)/sprite_get_width(Image_Background),(height-(Border_Space)*2)/sprite_get_height(Image_Background),0,c_white,pauseMenu_Alpha)
+	} else {
+		draw_set_alpha(pauseMenu_Alpha)
+		draw_set_color(Background_color)
+		draw_rectangle(Border_Space,Border_Space,PauseMenu_sise,height-Border_Space,false)
+	}
 	draw_set_color(Borders_Color)
 	draw_set_alpha(Borders_Alpha)
 	draw_rectangle(Border_Space,Border_Space,PauseMenu_sise,height-Border_Space,true)

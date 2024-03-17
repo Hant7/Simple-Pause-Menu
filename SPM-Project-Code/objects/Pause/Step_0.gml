@@ -114,7 +114,7 @@ setingsOptions = [
 ];
 
 // this is a example
-themes = 20;
+themes = 21;
 themeList = [
 	"Simple",
 	"Space Blue",
@@ -135,6 +135,8 @@ themeList = [
 	"Goldenrod",
 	"Ocean Blue",
 	"Dark Orchid",
+	"Stranger",
+	"Bg Test"
 ]
 if (theme <= array_length(themeList) && theme > 0) {
 	themeName = themeList[theme - 1]
@@ -145,107 +147,134 @@ switch(theme) {
 		Background_color = $FF000000;
 		Font_color = $FFFFFFFF;
 		Borders_Color = $FFFFFFFF;
+		Image_Background_Use = false
 	break
 	case 2:
 		Background_color = $FF191911;
 		Font_color = $FFFFFFCC;
 		Borders_Color = $FFFFFFCC;
+		Image_Background_Use = false
 	break
 	case 3:
 		Background_color = $FF001900;
 		Font_color = $FF00D826;
 		Borders_Color = $FF00D826;
+		Image_Background_Use = false
 	break
 	case 4:
 		Background_color = $FF000B19;
 		Font_color = $FF328CFF;
 		Borders_Color = $FF328CFF;
+		Image_Background_Use = false
 	break
 	case 5:
 		Background_color = $FF330023;
 		Font_color = $FFFF45C8;
 		Borders_Color = $FFFF45C8;
+		Image_Background_Use = false
 	break
 	case 6:
 		Background_color = $FF423D4C;
 		Font_color = $FFAD51CC;
 		Borders_Color = $FF6C19FF;
+		Image_Background_Use = false
 	break
 	case 7:
 		Background_color = $FF191414;
 		Font_color = $FF32A4FF;
 		Borders_Color = $FFFF3232;
+		Image_Background_Use = false
 	break
 	case 8:
 		Background_color = $FF050F19;
 		Font_color = $FFFF3232;
 		Borders_Color = $FF32A4FF;
+		Image_Background_Use = false
 	break
 	    case 9:
         Background_color = $FF190009;
         Font_color = $FFFF1923;
         Borders_Color = $FF1923FF;
+		Image_Background_Use = false
         break;
     case 10:
         Background_color = $FF001F3F;
         Font_color = $FF8ED6FF;
         Borders_Color = $FF8ED6FF;
+		Image_Background_Use = false
         break;
     case 11:
         Background_color = $FFFFFF00;
         Font_color = $FF008080;
         Borders_Color = $FF008080;
+		Image_Background_Use = false
         break;
     case 12:
         Background_color = $FF808080;
         Font_color = $FF000000;
         Borders_Color = $FF000000;
+		Image_Background_Use = false
         break;
     case 13:
         Background_color = $FF33001B;
         Font_color = $FFFF5CCD;
         Borders_Color = $FFFF5CCD;
+		Image_Background_Use = false
         break;
     case 14:
         Background_color = $FF4B0082;
         Font_color = $FFFFF700;
         Borders_Color = $FFFFF700;
+		Image_Background_Use = false
         break;
     case 15:
         Background_color = $FF32CD32;
         Font_color = $FF8B0000;
         Borders_Color = $FF8B0000;
+		Image_Background_Use = false
         break;
     case 16:
         Background_color = $FF008080;
         Font_color = $FFFFD700;
         Borders_Color = $FFFFD700;
+		Image_Background_Use = false
         break;
     case 17:
         Background_color = $FFDAA520;
         Font_color = $FF2F4F4F;
         Borders_Color = $FF2F4F4F;
+		Image_Background_Use = false
         break;
     case 18:
         Background_color = $FF5C3317;
         Font_color = $FFFFF8DC;
         Borders_Color = $FFFFF8DC;
+		Image_Background_Use = false
         break;
     case 19:
         Background_color = $FF87CEEB;
         Font_color = $FF191970;
         Borders_Color = $FF191970;
+		Image_Background_Use = false
         break;
     case 20:
         Background_color = $FF9932CC;
         Font_color = $FF00FF7F;
         Borders_Color = $FF00FF7F;
+		Image_Background_Use = false
         break;
+	case 21:
+		Background_color = $FF9932CC;
+        Font_color = $00ffffff;
+        Borders_Color = $00E565FF;
+		Image_Background_Use = true
+		break;
     default:
         themeName = "out of range";
-        Background_color = $FF000000;
-        Font_color = $FFFFFFFF;
-        Borders_Color = $FF0000FF;
+        Background_color = $00000000;
+        Font_color = $000000FF;
+        Borders_Color = $000000FF;
+		Image_Background_Use = false
     break;
 }
 
