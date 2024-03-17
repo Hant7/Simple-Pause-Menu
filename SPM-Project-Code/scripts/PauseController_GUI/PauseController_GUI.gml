@@ -8,12 +8,20 @@ function ExecuteOptions(Options,option) {
 		draw_set_alpha(pauseMenu_Alpha)
 		draw_set_color(Background_color)
 		if ((height < Border_Space + array_length(Options) * font_size) + (array_length(Options) * (font_size/2))*2  && height < (Border_Space + ((array_length(Options)) * font_size) + (array_length(Options) * (font_size/2)))) {
-			draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,height-Border_Space,false)
+			if (Image_Background_Use) {
+				draw_sprite_ext(Image_Background,-1,Border_Space * 2 + PauseMenu_sise,Border_Space,(width-PauseMenu_sise-(Border_Space*3))/sprite_get_width(Image_Background),height-(Border_Space*2)/sprite_get_height(Image_Background),0,c_white,Image_Background_alpha)
+			} else {
+				draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,height-Border_Space,false)
+			}
 			draw_set_color(Borders_Color)
 			draw_set_alpha(Borders_Alpha)
 			draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,height-Border_Space,true)
 		} else {
-			draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,Border_Space + array_length(Options) * font_size + array_length(Options) * (font_size/2) + Border_Space,false)
+			if (Image_Background_Use) {
+				draw_sprite_ext(Image_Background,-1,Border_Space * 2 + PauseMenu_sise,Border_Space,(width-PauseMenu_sise-(Border_Space*3))/sprite_get_width(Image_Background),(array_length(Options) * font_size + array_length(Options) * (font_size/2) + Border_Space)/sprite_get_height(Image_Background),0,c_white,Image_Background_alpha)
+			} else {
+				draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,Border_Space + array_length(Options) * font_size + array_length(Options) * (font_size/2) + Border_Space,false)
+			}
 			draw_set_color(Borders_Color)
 			draw_set_alpha(Borders_Alpha)
 			draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,Border_Space  + array_length(Options) * font_size + array_length(Options) * (font_size/2) + Border_Space,true)
@@ -65,12 +73,20 @@ function ExecuteText(text,option) {
 		draw_set_alpha(pauseMenu_Alpha)
 		draw_set_color(Background_color)
 		if ((height < Border_Space + array_length(text) * font_size) + (array_length(text) * (font_size/2))*2  && height < (Border_Space + ((array_length(text)) * font_size) + (array_length(text) * (font_size/2)))) {
-			draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,height-Border_Space,false)
+			if (Image_Background_Use) {
+				draw_sprite_ext(Image_Background,-1,Border_Space * 2 + PauseMenu_sise,Border_Space,(width-PauseMenu_sise-(Border_Space*3))/sprite_get_width(Image_Background),height-(Border_Space*2)/sprite_get_height(Image_Background),0,c_white,Image_Background_alpha)
+			} else {
+				draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,height-Border_Space,false)
+			}
 			draw_set_color(Borders_Color)
 			draw_set_alpha(Borders_Alpha)
 			draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,height-Border_Space,true)
 		} else {
-			draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,Border_Space + array_length(text) * font_size + array_length(text) * (font_size/2) + Border_Space,false)
+			if (Image_Background_Use) {
+				draw_sprite_ext(Image_Background,-1,Border_Space * 2 + PauseMenu_sise,Border_Space,(width-PauseMenu_sise-(Border_Space*3))/sprite_get_width(Image_Background),(array_length(text) * font_size + array_length(text) * (font_size/2) + Border_Space)/sprite_get_height(Image_Background),0,c_white,Image_Background_alpha)
+			} else {
+				draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,Border_Space + array_length(text) * font_size + array_length(text) * (font_size/2) + Border_Space,false)
+			}
 			draw_set_color(Borders_Color)
 			draw_set_alpha(Borders_Alpha)
 			draw_rectangle(Border_Space * 2 + PauseMenu_sise,Border_Space,width-Border_Space,Border_Space  + array_length(text) * font_size + array_length(text) * (font_size/2) + Border_Space,true)
@@ -120,7 +136,11 @@ function ExecuteList(text,option,Size = List_Size) {
 		MaxList_move = array_length(text);
 		draw_set_color(Background_color)
 		draw_set_alpha(1)
-		draw_rectangle((width)-Border_Space-List_Border,pauseOption_Select*(font_size*1.5)-Scroll+Border_Space-Scrolling,(width)-Border_Space-Size-List_Border,pauseOption_Select*(font_size*1.5)-Scroll+Border_Space+array_length(text)*(font_size*1.5)+Border_Space-Scrolling,false)
+		if (Image_Background_Use) {
+			draw_sprite_ext(Image_Background,-1,(width)-Border_Space-List_Border,pauseOption_Select*(font_size*1.5)-Scroll+Border_Space-Scrolling,(Border_Space-Size-List_Border)/sprite_get_width(Image_Background),(Border_Space+array_length(text)*(font_size*1.5)-Scrolling)/sprite_get_height(Image_Background),0,c_white,1)
+		} else {
+			draw_rectangle((width)-Border_Space-List_Border,pauseOption_Select*(font_size*1.5)-Scroll+Border_Space-Scrolling,(width)-Border_Space-Size-List_Border,pauseOption_Select*(font_size*1.5)-Scroll+Border_Space+array_length(text)*(font_size*1.5)+Border_Space-Scrolling,false)
+		}
 		draw_set_color(Borders_Color)
 		draw_set_alpha(1)
 		draw_rectangle((width)-Border_Space-List_Border,pauseOption_Select*(font_size*1.5)-Scroll+Border_Space-Scrolling,(width)-Border_Space-Size-List_Border,pauseOption_Select*(font_size*1.5)-Scroll+Border_Space+array_length(text)*(font_size*1.5)+Border_Space-Scrolling,true)

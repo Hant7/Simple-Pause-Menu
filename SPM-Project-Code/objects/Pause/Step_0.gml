@@ -114,7 +114,7 @@ setingsOptions = [
 ];
 
 // this is a example
-themes = 21;
+themes = 22;
 themeList = [
 	"Simple",
 	"Space Blue",
@@ -136,7 +136,8 @@ themeList = [
 	"Ocean Blue",
 	"Dark Orchid",
 	"Stranger",
-	"Bg Test"
+	"Bg Test 1",
+	"Bg Test 2"
 ]
 if (theme <= array_length(themeList) && theme > 0) {
 	themeName = themeList[theme - 1]
@@ -267,7 +268,15 @@ switch(theme) {
 		Background_color = $FF9932CC;
         Font_color = $00ffffff;
         Borders_Color = $00E565FF;
-		Image_Background_Use = true
+		Image_Background_Use = true;
+		Image_Background = Background_1;
+		break;
+	case 22:
+		Background_color = $007FFF7F;
+        Font_color = $00000000;
+        Borders_Color = $007FFF7F;
+		Image_Background_Use = true;
+		Image_Background = Background_2;
 		break;
     default:
         themeName = "out of range";

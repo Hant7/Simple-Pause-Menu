@@ -15,7 +15,7 @@ if (pause) {
 	draw_set_color(Font_color)
 	if (Image_Background_Use) {
 		draw_set_color(c_white)
-		draw_sprite_ext(Image_Background,-1,Border_Space,Border_Space,(PauseMenu_sise-Border_Space)/sprite_get_width(Image_Background),(height-(Border_Space)*2)/sprite_get_height(Image_Background),0,c_white,pauseMenu_Alpha)
+		draw_sprite_ext(Image_Background,-1,Border_Space,Border_Space,(PauseMenu_sise-Border_Space)/sprite_get_width(Image_Background),(height-(Border_Space)*2)/sprite_get_height(Image_Background),0,c_white,Image_Background_alpha)
 	} else {
 		draw_set_alpha(pauseMenu_Alpha)
 		draw_set_color(Background_color)

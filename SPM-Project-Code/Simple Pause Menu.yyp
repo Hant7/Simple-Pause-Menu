@@ -32,6 +32,7 @@
     {"id":{"name":"PauseController_Actions","path":"scripts/PauseController_Actions/PauseController_Actions.yy",},},
     {"id":{"name":"PauseController_GUI","path":"scripts/PauseController_GUI/PauseController_GUI.yy",},},
     {"id":{"name":"Background_1","path":"sprites/Background_1/Background_1.yy",},},
+    {"id":{"name":"Background_2","path":"sprites/Background_2/Background_2.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
